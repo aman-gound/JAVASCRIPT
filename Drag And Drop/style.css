@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f6f7fb;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 420px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.container .box {
+  position: relative;
+  height: 160px;
+  width: 160px;
+  border-radius: 12px;
+  border: 2px solid #333;
+}
+
+.box .image {
+  background-image: url("./young-beautiful-woman-looking-camera-trendy-girl-casual-summer-white-t-shirt-jeans-shorts-positive-female-shows-facial-emotions-funny-model-isolated-yellow.jpg");
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  background-position: center;
+  background-size: cover;
+}
+
+.box.hovered{
+  border: 2px dashed #333;
+}
