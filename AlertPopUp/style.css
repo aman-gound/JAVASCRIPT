@@ -1,0 +1,76 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  background: #dedede;
+}
+.click, .popup-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 5px;
+  border: 1px solid red;
+}
+.click{
+  background:#2981bc;
+  color:white;
+  font-family:arial;
+  font-weight:bold;
+  text-align: center;
+  padding:10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+}
+.popup-box{
+ user-select: none;
+ width: 400px;
+ background:#f2f2f2;
+ text-align: center;
+ align-items: center;
+ padding: 40px;
+ border: 1px solid #b3b3b3;
+ box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+ z-index: 9999;
+ opacity: 0;
+ pointer-events: none;
+ transition:all 0.3s ease-in-out
+
+}
+.popup-box h1{
+ font-size:30px;
+ color:#1b2631;
+ margin-bottom: 5px;
+}
+.popup-box label{
+ font-size:23px;
+ color:#1b2631;
+ margin-bottom: 5px;
+}
+.popup-box .btns{
+  margin: 40px 0 0 0;
+}
+.btns .btn1 , .btn2{
+background:#999999;
+color:white;
+font-size: 18px;
+padding:10px 13px;
+border:1px solid #808080;
+border-radius: 5px;
+transition: all 0.3s ease-in-out;
+}
+.btns a{
+  text-decoration: none;
+}
+.btns a:hover{
+ background-color: #2981bc;
+}
+.btns .btn2{
+  background:#ff3333;
+  margin-left: 20px;
+  
+}
